@@ -1,0 +1,549 @@
+# howard-ruder-2018-universal
+@inproceedings{ulmfit,
+    title = "Universal Language Model Fine-tuning for Text Classification",
+    author = "Howard, Jeremy  and
+      Ruder, Sebastian",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/P18-1031",
+    doi = "10.18653/v1/P18-1031",
+    pages = "328--339",
+    abstract = "Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24{\%} on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100 times more data. We open-source our pretrained models and code.",
+}
+
+# radford-etal-2018-improving
+@article{gpt,
+    title = "Improving Language Understanding by Generative Pre-Training",
+    author = "Alec Radford and Karthik Narasimhan and Tim Salimans and Ilya Sutskever",
+    year = "2018",
+    url = "https://openai.com/blog/language-unsupervised/",
+}
+
+# NIPS2017_7181
+@incollection{transformer,
+title = {Attention is All you Need},
+author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
+booktitle = {Advances in Neural Information Processing Systems 30},
+editor = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+pages = {5998--6008},
+year = {2017},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf}
+}
+
+@inproceedings{Zhu2020Incorporating,
+title={Incorporating BERT into Neural Machine Translation},
+author={Jinhua Zhu and Yingce Xia and Lijun Wu and Di He and Tao Qin and Wengang Zhou and Houqiang Li and Tieyan Liu},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=Hyl7ygStwB}
+}
+
+@inproceedings{clinchant-etal-2019-use,
+    title = "On the use of {BERT} for Neural Machine Translation",
+    author = "Clinchant, Stephane  and
+      Jung, Kweon Woo  and
+      Nikoulina, Vassilina",
+    booktitle = "Proceedings of the 3rd Workshop on Neural Generation and Translation",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-5611",
+    doi = "10.18653/v1/D19-5611",
+    pages = "108--117",
+    abstract = "Exploiting large pretrained models for various NMT tasks have gained a lot of visibility recently. In this work we study how BERT pretrained models could be exploited for supervised Neural Machine Translation. We compare various ways to integrate pretrained BERT model with NMT model and study the impact of the monolingual data used for BERT training on the final translation quality. We use WMT-14 English-German, IWSLT15 English-German and IWSLT14 English-Russian datasets for these experiments. In addition to standard task test set evaluation, we perform evaluation on out-of-domain test sets and noise injected test sets, in order to assess how BERT pretrained representations affect model robustness.",
+}
+
+@inproceedings{imamura-sumita-2019-recycling,
+    title = "Recycling a Pre-trained {BERT} Encoder for Neural Machine Translation",
+    author = "Imamura, Kenji  and
+      Sumita, Eiichiro",
+    booktitle = "Proceedings of the 3rd Workshop on Neural Generation and Translation",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-5603",
+    doi = "10.18653/v1/D19-5603",
+    pages = "23--31",
+    abstract = "In this paper, a pre-trained Bidirectional Encoder Representations from Transformers (BERT) model is applied to Transformer-based neural machine translation (NMT). In contrast to monolingual tasks, the number of unlearned model parameters in an NMT decoder is as huge as the number of learned parameters in the BERT model. To train all the models appropriately, we employ two-stage optimization, which first trains only the unlearned parameters by freezing the BERT model, and then fine-tunes all the sub-models. In our experiments, stable two-stage optimization was achieved, in contrast the BLEU scores of direct fine-tuning were extremely low. Consequently, the BLEU scores of the proposed method were better than those of the Transformer base model and the same model without pre-training. Additionally, we confirmed that NMT with the BERT encoder is more effective in low-resource settings.",
+}
+
+@inproceedings{liu-lapata-2019-text,
+    title = "Text Summarization with Pretrained Encoders",
+    author = "Liu, Yang  and
+      Lapata, Mirella",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D19-1387",
+    doi = "10.18653/v1/D19-1387",
+    pages = "3730--3740",
+    abstract = "Bidirectional Encoder Representations from Transformers (BERT) represents the latest incarnation of pretrained language models which have recently advanced a wide range of natural language processing tasks. In this paper, we showcase how BERT can be usefully applied in text summarization and propose a general framework for both extractive and abstractive models. We introduce a novel document-level encoder based on BERT which is able to express the semantics of a document and obtain representations for its sentences. Our extractive model is built on top of this encoder by stacking several inter-sentence Transformer layers. For abstractive summarization, we propose a new fine-tuning schedule which adopts different optimizers for the encoder and the decoder as a means of alleviating the mismatch between the two (the former is pretrained while the latter is not). We also demonstrate that a two-staged fine-tuning approach can further boost the quality of the generated summaries. Experiments on three datasets show that our model achieves state-of-the-art results across the board in both extractive and abstractive settings.",
+}
+
+@inproceedings{bert,
+    title = "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    author = "Devlin, Jacob  and
+      Chang, Ming-Wei  and
+      Lee, Kenton  and
+      Toutanova, Kristina",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/N19-1423",
+    doi = "10.18653/v1/N19-1423",
+    pages = "4171--4186",
+    abstract = "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5 (7.7 point absolute improvement), MultiNLI accuracy to 86.7{\%} (4.6{\%} absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).",
+}
+
+@incollection{NIPS2019_9464,
+title = {Unified Language Model Pre-training for Natural Language Understanding and Generation},
+author = {Dong, Li and Yang, Nan and Wang, Wenhui and Wei, Furu and Liu, Xiaodong and Wang, Yu and Gao, Jianfeng and Zhou, Ming and Hon, Hsiao-Wuen},
+booktitle = {Advances in Neural Information Processing Systems 32},
+editor = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+pages = {13063--13075},
+year = {2019},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/9464-unified-language-model-pre-training-for-natural-language-understanding-and-generation.pdf}
+}
+
+@inproceedings{pbg,
+  title={{PyTorch-BigGraph: A Large-scale Graph Embedding System}},
+  author={Lerer, Adam and Wu, Ledell and Shen, Jiajun and Lacroix, Timothee and Wehrstedt, Luca and Bose, Abhijit and Peysakhovich, Alex},
+  booktitle={Proceedings of the 2nd SysML Conference},
+  year={2019},
+  address={Palo Alto, CA, USA}
+}
+
+@inproceedings{velickovic2018graph,
+title={Graph Attention Networks},
+author={Petar Veličković and Guillem Cucurull and Arantxa Casanova and Adriana Romero and Pietro Liò and Yoshua Bengio},
+booktitle={International Conference on Learning Representations},
+year={2018},
+url={https://openreview.net/forum?id=rJXMpikCZ},
+}
+
+@incollection{NIPS2017_7213,
+title = {Poincar\'{e} Embeddings for Learning Hierarchical Representations},
+author = {Nickel, Maximillian and Kiela, Douwe},
+booktitle = {Advances in Neural Information Processing Systems 30},
+editor = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+pages = {6338--6347},
+year = {2017},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/7213-poincare-embeddings-for-learning-hierarchical-representations.pdf}
+}
+
+@inproceedings{10.1145/3097983.3098061,
+author = {Ribeiro, Leonardo F.R. and Saverese, Pedro H.P. and Figueiredo, Daniel R.},
+title = {Struc2vec: Learning Node Representations from Structural Identity},
+year = {2017},
+isbn = {9781450348874},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3097983.3098061},
+doi = {10.1145/3097983.3098061},
+booktitle = {Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {385–394},
+numpages = {10},
+keywords = {feature learning, node embeddings, structural identity},
+location = {Halifax, NS, Canada},
+series = {KDD ’17}
+}
+
+@article{GOYAL201878,
+title = "Graph embedding techniques, applications, and performance: A survey",
+journal = "Knowledge-Based Systems",
+volume = "151",
+pages = "78 - 94",
+year = "2018",
+issn = "0950-7051",
+doi = "https://doi.org/10.1016/j.knosys.2018.03.022",
+url = "http://www.sciencedirect.com/science/article/pii/S0950705118301540",
+author = "Palash Goyal and Emilio Ferrara",
+keywords = "Graph embedding techniques, Graph embedding applications, Python graph embedding methods GEM library",
+abstract = "Graphs, such as social networks, word co-occurrence networks, and communication networks, occur naturally in various real-world applications. Analyzing them yields insight into the structure of society, language, and different patterns of communication. Many approaches have been proposed to perform the analysis. Recently, methods which use the representation of graph nodes in vector space have gained traction from the research community. In this survey, we provide a comprehensive and structured analysis of various graph embedding techniques proposed in the literature. We first introduce the embedding task and its challenges such as scalability, choice of dimensionality, and features to be preserved, and their possible solutions. We then present three categories of approaches based on factorization methods, random walks, and deep learning, with examples of representative algorithms in each category and analysis of their performance on various tasks. We evaluate these state-of-the-art methods on a few common datasets and compare their performance against one another. Our analysis concludes by suggesting some potential applications and future directions. We finally present the open-source Python library we developed, named GEM (Graph Embedding Methods, available at https://github.com/palash1992/GEM), which provides all presented algorithms within a unified interface to foster and facilitate research on the topic."
+}
+
+@InProceedings{pmlr-v97-wu19e,
+  title =    {Simplifying Graph Convolutional Networks},
+  author =   {Wu, Felix and Souza, Amauri and Zhang, Tianyi and Fifty, Christopher and Yu, Tao and Weinberger, Kilian},
+  booktitle =    {Proceedings of the 36th International Conference on Machine Learning},
+  pages =    {6861--6871},
+  year =     {2019},
+  editor =   {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  volume =   {97},
+  series =   {Proceedings of Machine Learning Research},
+  address =      {Long Beach, California, USA},
+  month =    {09--15 Jun},
+  publisher =    {PMLR},
+  pdf =      {http://proceedings.mlr.press/v97/wu19e/wu19e.pdf},
+  url =      {http://proceedings.mlr.press/v97/wu19e.html},
+  abstract =     {Graph Convolutional Networks (GCNs) and their variants have experienced significant attention and have become the de facto methods for learning graph representations. GCNs derive inspiration primarily from recent deep learning approaches, and as a result, may inherit unnecessary complexity and redundant computation. In this paper, we reduce this excess complexity through successively removing nonlinearities and collapsing weight matrices between consecutive layers. We theoretically analyze the resulting linear model and show that it corresponds to a fixed low-pass filter followed by a linear classifier. Notably, our experimental evaluation demonstrates that these simplifications do not negatively impact accuracy in many downstream applications. Moreover, the resulting model scales to larger datasets, is naturally interpretable, and yields up to two orders of magnitude speedup over FastGCN.}
+}
+
+@INPROCEEDINGS{8439897,  author={F. {Monti} and K. {Otness} and M. M. {Bronstein}},  booktitle={2018 IEEE Data Science Workshop (DSW)},   title={MOTIFNET: A MOTIF-BASED GRAPH CONVOLUTIONAL NETWORK FOR DIRECTED GRAPHS},   year={2018},  volume={},  number={},  pages={225-228},}
+
+@incollection{NIPS2017_6703,
+title = {Inductive Representation Learning on Large Graphs},
+author = {Hamilton, Will and Ying, Zhitao and Leskovec, Jure},
+booktitle = {Advances in Neural Information Processing Systems 30},
+editor = {I. Guyon and U. V. Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+pages = {1024--1034},
+year = {2017},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/6703-inductive-representation-learning-on-large-graphs.pdf}
+}
+
+@ARTICLE{8521593,  author={R. {Levie} and F. {Monti} and X. {Bresson} and M. M. {Bronstein}},  journal={IEEE Transactions on Signal Processing},   title={CayleyNets: Graph Convolutional Neural Networks With Complex Rational Spectral Filters},   year={2019},  volume={67},  number={1},  pages={97-109},}
+
+@INPROCEEDINGS{8100059,  author={F. {Monti} and D. {Boscaini} and J. {Masci} and E. {Rodolà} and J. {Svoboda} and M. M. {Bronstein}},  booktitle={2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},   title={Geometric Deep Learning on Graphs and Manifolds Using Mixture Model CNNs},   year={2017},  volume={},  number={},  pages={5425-5434},}
+
+@inproceedings{kipf2017semi,
+  title={Semi-Supervised Classification with Graph Convolutional Networks},
+  author={Kipf, Thomas N. and Welling, Max},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2017}
+}
+
+@incollection{NIPS2016_6081,
+title = {Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering},
+author = {Defferrard, Micha\"{e}l and Bresson, Xavier and Vandergheynst, Pierre},
+booktitle = {Advances in Neural Information Processing Systems 29},
+editor = {D. D. Lee and M. Sugiyama and U. V. Luxburg and I. Guyon and R. Garnett},
+pages = {3844--3852},
+year = {2016},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/6081-convolutional-neural-networks-on-graphs-with-fast-localized-spectral-filtering.pdf}
+}
+
+@inproceedings{harp,
+    title={HARP: Hierarchical Representation Learning for Networks},
+    author={Chen, Haochen and Perozzi, Bryan and Hu, Yifan and Skiena, Steven},
+    booktitle={Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence},
+    year={2018},
+    organization={AAAI Press}
+}
+
+@inproceedings{10.1145/2736277.2741093,
+author = {Tang, Jian and Qu, Meng and Wang, Mingzhe and Zhang, Ming and Yan, Jun and Mei, Qiaozhu},
+title = {LINE: Large-Scale Information Network Embedding},
+year = {2015},
+isbn = {9781450334693},
+publisher = {International World Wide Web Conferences Steering Committee},
+address = {Republic and Canton of Geneva, CHE},
+url = {https://doi.org/10.1145/2736277.2741093},
+doi = {10.1145/2736277.2741093},
+booktitle = {Proceedings of the 24th International Conference on World Wide Web},
+pages = {1067–1077},
+numpages = {11},
+keywords = {information network embedding, dimension reduction, scalability, feature learning},
+location = {Florence, Italy},
+series = {WWW ’15}
+}
+
+@inproceedings{10.1145/2939672.2939753,
+author = {Wang, Daixin and Cui, Peng and Zhu, Wenwu},
+title = {Structural Deep Network Embedding},
+year = {2016},
+isbn = {9781450342322},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2939672.2939753},
+doi = {10.1145/2939672.2939753},
+booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {1225–1234},
+numpages = {10},
+keywords = {deep learning, network embedding, network analysis},
+location = {San Francisco, California, USA},
+series = {KDD ’16}
+}
+  
+@article{Narayanan2017graph2vecLD,
+  title={graph2vec: Learning Distributed Representations of Graphs},
+  author={Annamalai Narayanan and Mahinthan Chandramohan and Rajasekar Venkatesan and Lihui Chen and Yang P. Liu and Shantanu Jaiswal},
+  journal={ArXiv},
+  year={2017},
+  volume={abs/1707.05005}
+}
+
+@inproceedings{10.1145/2939672.2939754,
+author = {Grover, Aditya and Leskovec, Jure},
+title = {Node2vec: Scalable Feature Learning for Networks},
+year = {2016},
+isbn = {9781450342322},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2939672.2939754},
+doi = {10.1145/2939672.2939754},
+booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {855–864},
+numpages = {10},
+keywords = {graph representations, node embeddings, feature learning, information networks},
+location = {San Francisco, California, USA},
+series = {KDD ’16}
+}
+
+@inproceedings{10.1145/2623330.2623732,
+author = {Perozzi, Bryan and Al-Rfou, Rami and Skiena, Steven},
+title = {DeepWalk: Online Learning of Social Representations},
+year = {2014},
+isbn = {9781450329569},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2623330.2623732},
+doi = {10.1145/2623330.2623732},
+booktitle = {Proceedings of the 20th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {701–710},
+numpages = {10},
+keywords = {learning with partial labels, network classification, deep learning, social networks, latent representations, online learning},
+location = {New York, New York, USA},
+series = {KDD ’14}
+}
+
+@incollection{NIPS2018_8131,
+title = {Watch Your Step: Learning Node Embeddings via Graph Attention},
+author = {Abu-El-Haija, Sami and Perozzi, Bryan and Al-Rfou, Rami and Alemi, Alexander A},
+booktitle = {Advances in Neural Information Processing Systems 31},
+editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+pages = {9180--9190},
+year = {2018},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/8131-watch-your-step-learning-node-embeddings-via-graph-attention.pdf}
+}
+
+@inproceedings{10.1145/3308558.3313660,
+author = {Epasto, Alessandro and Perozzi, Bryan},
+title = {Is a Single Embedding Enough? Learning Node Representations That Capture Multiple Social Contexts},
+year = {2019},
+isbn = {9781450366748},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3308558.3313660},
+doi = {10.1145/3308558.3313660},
+booktitle = {The World Wide Web Conference},
+pages = {394–404},
+numpages = {11},
+keywords = {graph embeddings, polysemous representations, representation learning},
+location = {San Francisco, CA, USA},
+series = {WWW ’19}
+}
+
+@inproceedings{10.1145/3097983.3098054,
+author = {Epasto, Alessandro and Lattanzi, Silvio and Paes Leme, Renato},
+title = {Ego-Splitting Framework: From Non-Overlapping to Overlapping Clusters},
+year = {2017},
+isbn = {9781450348874},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3097983.3098054},
+doi = {10.1145/3097983.3098054},
+booktitle = {Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+pages = {145–154},
+numpages = {10},
+keywords = {ego-nets, large-scale graph algorithms, overlapping clustering},
+location = {Halifax, NS, Canada},
+series = {KDD ’17}
+}
+
+@inproceedings{10.5555/3045390.3045396,
+author = {Yang, Zhilin and Cohen, William W. and Salakhutdinov, Ruslan},
+title = {Revisiting Semi-Supervised Learning with Graph Embeddings},
+year = {2016},
+publisher = {JMLR.org},
+booktitle = {Proceedings of the 33rd International Conference on International Conference on Machine Learning - Volume 48},
+pages = {40–48},
+numpages = {9},
+location = {New York, NY, USA},
+series = {ICML’16}
+}
+
+@article{Sen_Namata_Bilgic_Getoor_Galligher_Eliassi-Rad_2008, title={Collective Classification in Network Data}, volume={29}, url={https://www.aaai.org/ojs/index.php/aimagazine/article/view/2157}, DOI={10.1609/aimag.v29i3.2157}, abstractNote={Many real-world applications produce networked data such as the world-wide web (hypertext documents connected via hyperlinks), social networks (for example, people connected by friendship links), communication networks (computers connected via communication links) and biological networks (for example, protein interaction networks). A recent focus in machine learning research has been to extend traditional machine learning classification techniques to classify nodes in such networks. In this article, we provide a brief introduction to this area of research and how it has progressed during the past decade. We introduce four of the most widely used inference algorithms for classifying networked data and empirically compare them on both synthetic and real-world data.}, number={3}, journal={AI Magazine}, author={Sen, Prithviraj and Namata, Galileo and Bilgic, Mustafa and Getoor, Lise and Galligher, Brian and Eliassi-Rad, Tina}, year={2008}, month={Sep.}, pages={93}}
+
+@inproceedings{bing-etal-2015-improving,
+    title = "Improving Distant Supervision for Information Extraction Using Label Propagation Through Lists",
+    author = "Bing, Lidong  and
+      Chaudhari, Sneha  and
+      Wang, Richard  and
+      Cohen, William",
+    booktitle = "Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2015",
+    address = "Lisbon, Portugal",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/D15-1060",
+    doi = "10.18653/v1/D15-1060",
+    pages = "524--529",
+}
+
+@inproceedings{10.1145/3219819.3219885,
+author = {Grbovic, Mihajlo and Cheng, Haibin},
+title = {Real-Time Personalization Using Embeddings for Search Ranking at Airbnb},
+year = {2018},
+isbn = {9781450355520},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3219819.3219885},
+doi = {10.1145/3219819.3219885},
+booktitle = {Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining},
+pages = {311–320},
+numpages = {10},
+keywords = {search ranking, personalization, user modeling},
+location = {London, United Kingdom},
+series = {KDD ’18}
+}
+
+@inproceedings{DBLP:conf/www/ZhangWZ19,
+  author    = {Yuan Zhang and
+               Dong Wang and
+               Yan Zhang},
+  editor    = {Ling Liu and
+               Ryen W. White and
+               Amin Mantrach and
+               Fabrizio Silvestri and
+               Julian J. McAuley and
+               Ricardo Baeza{-}Yates and
+               Leila Zia},
+  title     = {Neural {IR} Meets Graph Embedding: {A} Ranking Model for Product Search},
+  booktitle = {The World Wide Web Conference, {WWW} 2019, San Francisco, CA, USA,
+               May 13-17, 2019},
+  pages     = {2390--2400},
+  publisher = {{ACM}},
+  year      = {2019},
+  url       = {https://doi.org/10.1145/3308558.3313468},
+  doi       = {10.1145/3308558.3313468},
+  timestamp = {Sun, 22 Sep 2019 18:12:47 +0200},
+  biburl    = {https://dblp.org/rec/conf/www/ZhangWZ19.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{10.1145/3219819.3219890,
+author = {Ying, Rex and He, Ruining and Chen, Kaifeng and Eksombatchai, Pong and Hamilton, William L. and Leskovec, Jure},
+title = {Graph Convolutional Neural Networks for Web-Scale Recommender Systems},
+year = {2018},
+isbn = {9781450355520},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3219819.3219890},
+doi = {10.1145/3219819.3219890},
+booktitle = {Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining},
+pages = {974–983},
+numpages = {10},
+keywords = {scalability, deep learning, graph convolutional networks, recommender systems},
+location = {London, United Kingdom},
+series = {KDD ’18}
+}
+
+@inproceedings{10.5555/3045390.3045609,
+author = {Trouillon, Th\'{e}o and Welbl, Johannes and Riedel, Sebastian and Gaussier, \'{E}ric and Bouchard, Guillaume},
+title = {Complex Embeddings for Simple Link Prediction},
+year = {2016},
+publisher = {JMLR.org},
+booktitle = {Proceedings of the 33rd International Conference on International Conference on Machine Learning - Volume 48},
+pages = {2071–2080},
+numpages = {10},
+location = {New York, NY, USA},
+series = {ICML’16}
+}
+
+@inproceedings{10.5555/3104482.3104584,
+author = {Nickel, Maximilian and Tresp, Volker and Kriegel, Hans-Peter},
+title = {A Three-Way Model for Collective Learning on Multi-Relational Data},
+year = {2011},
+isbn = {9781450306195},
+publisher = {Omnipress},
+address = {Madison, WI, USA},
+booktitle = {Proceedings of the 28th International Conference on International Conference on Machine Learning},
+pages = {809–816},
+numpages = {8},
+location = {Bellevue, Washington, USA},
+series = {ICML’11}
+}
+
+@Article{mitra2018an,
+author = {Mitra, Bhaskar and Craswell, Nick},
+title = {An Introduction to Neural Information Retrieval},
+year = {2018},
+month = {December},
+abstract = {Neural ranking models for information retrieval (IR) use shallow or deep neural networks to rank search results in response to a query. Traditional learning to rank models employ supervised machine learning (ML) techniques—including neural networks—over hand-crafted IR features. By contrast, more recently proposed neural models learn representations of language from raw text that can bridge the gap between query and document vocabulary. Unlike classical learning to rank models and non-neural approaches to IR, these new ML techniques are data-hungry, requiring large scale training data before they can be deployed. This tutorial introduces basic concepts and intuitions behind neural IR models, and places them in the context of classical non-neural approaches to IR. We begin by introducing fundamental concepts of retrieval and different neural and non-neural approaches to unsupervised learning of vector representations of text. We then review IR methods that employ these pre-trained neural vector representations without learning the IR task end-to-end. We introduce the Learning to Rank (LTR) framework next, discussing standard loss functions for ranking. We follow that with an overview of deep neural networks (DNNs), including standard architectures and implementations. Finally, we review supervised neural learning to rank models, including recent DNN architectures trained end-to-end for ranking tasks. We conclude with a discussion on potential future directions for neural IR.},
+url = {https://www.microsoft.com/en-us/research/publication/introduction-neural-information-retrieval/},
+pages = {1-126},
+journal = {Foundations and Trends® in Information Retrieval},
+volume = {13},
+number = {1},
+}
+
+@InProceedings{huang2013learning,
+author = {Huang, Po-Sen and He, Xiaodong and Gao, Jianfeng and Deng, Li and Acero, Alex and Heck, Larry},
+title = {Learning Deep Structured Semantic Models for Web Search using Clickthrough Data},
+year = {2013},
+month = {October},
+abstract = {Latent semantic models, such as LSA, intend to map a query to its relevant documents at the semantic level where keyword-based matching often fails. In this study we strive to develop a series of new latent semantic models with a deep structure that project queries and documents into a common low-dimensional space where the relevance of a document given a query is readily computed as the distance between them. The proposed deep structured semantic models are discriminatively trained by maximizing the conditional likelihood of the clicked documents given a query using the clickthrough data. To make our models applicable to large-scale Web search applications, we also use a technique called word hashing, which is shown to effectively scale up our semantic models to handle large vocabularies which are common in such tasks. The new models are evaluated on a Web document ranking task using a real-world data set. Results show that our best model significantly outperforms other latent semantic models, which were considered state-of-the-art in the performance prior to the work presented in this paper.},
+publisher = {ACM International Conference on Information and Knowledge Management (CIKM)},
+url = {https://www.microsoft.com/en-us/research/publication/learning-deep-structured-semantic-models-for-web-search-using-clickthrough-data/},
+}
+
+@inproceedings{Zamani2018,
+author = {Zamani, Hamed and Mitra, Bhaskar and Song, Xia and Craswell, Nick and Tiwary, Saurabh},
+title = {Neural Ranking Models with Multiple Document Fields},
+year = {2018},
+isbn = {9781450355810},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3159652.3159730},
+doi = {10.1145/3159652.3159730},
+abstract = {Deep neural networks have recently shown promise in the ad-hoc retrieval task. However, such models have often been based on one field of the document, for example considering document title only or document body only. Since in practice documents typically have multiple fields, and given that non-neural ranking models such as BM25F have been developed to take advantage of document structure, this paper investigates how neural models can deal with multiple document fields. We introduce a model that can consume short text fields such as document title and long text fields such as document body. It can also handle multi-instance fields with variable number of instances, for example where each document has zero or more instances of incoming anchor text. Since fields vary in coverage and quality, we introduce a masking method to handle missing field instances, as well as a field-level dropout method to avoid relying too much on any one field. As in the studies of non-neural field weighting, we find it is better for the ranker to score the whole document jointly, rather than generate a per-field score and aggregate. We find that different document fields may match different aspects of the query and therefore benefit from comparing with separate representations of the query text. The combination of techniques introduced here leads to a neural ranker that can take advantage of full document structure, including multiple instance and missing instance data, of variable length. The techniques significantly enhance the performance of the ranker, and outperform a learning to rank baseline with hand-crafted features.},
+booktitle = {Proceedings of the Eleventh ACM International Conference on Web Search and Data Mining},
+pages = {700–708},
+numpages = {9},
+keywords = {document representation, deep neural networks, structured documents, representation learning, neural ranking models},
+location = {Marina Del Rey, CA, USA},
+series = {WSDM '18}
+}
+
+@inproceedings{He2017,
+author = {He, Xiangnan and Chua, Tat-Seng},
+title = {Neural Factorization Machines for Sparse Predictive Analytics},
+year = {2017},
+isbn = {9781450350228},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3077136.3080777},
+doi = {10.1145/3077136.3080777},
+abstract = {Many predictive tasks of web applications need to model categorical variables, such as user IDs and demographics like genders and occupations. To apply standard machine learning techniques, these categorical predictors are always converted to a set of binary features via one-hot encoding, making the resultant feature vector highly sparse. To learn from such sparse data effectively, it is crucial to account for the interactions between features.Factorization Machines (FMs) are a popular solution for efficiently using the second-order feature interactions. However, FM models feature interactions in a linear way, which can be insufficient for capturing the non-linear and complex inherent structure of real-world data. While deep neural networks have recently been applied to learn non-linear feature interactions in industry, such as the Wide&amp;Deep by Google and DeepCross by Microsoft, the deep structure meanwhile makes them difficult to train.In this paper, we propose a novel model Neural Factorization Machine (NFM) for prediction under sparse settings. NFM seamlessly combines the linearity of FM in modelling second-order feature interactions and the non-linearity of neural network in modelling higher-order feature interactions. Conceptually, NFM is more expressive than FM since FM can be seen as a special case of NFM without hidden layers. Empirical results on two regression tasks show that with one hidden layer only, NFM significantly outperforms FM with a 7.3% relative improvement. Compared to the recent deep learning methods Wide&amp;Deep and DeepCross, our NFM uses a shallower structure but offers better performance, being much easier to train and tune in practice.},
+booktitle = {Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {355–364},
+numpages = {10},
+keywords = {sparse data, recommendation, regression, deep learning, neural networks, factorization machines},
+location = {Shinjuku, Tokyo, Japan},
+series = {SIGIR '17}
+}
+
+@article{Zhang2019,
+author = {Zhang, Shuai and Yao, Lina and Sun, Aixin and Tay, Yi},
+title = {Deep Learning Based Recommender System: A Survey and New Perspectives},
+year = {2019},
+issue_date = {February 2019},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {52},
+number = {1},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3285029},
+doi = {10.1145/3285029},
+abstract = {With the growing volume of online information, recommender systems have been an effective strategy to overcome information overload. The utility of recommender systems cannot be overstated, given their widespread adoption in many web applications, along with their potential impact to ameliorate many problems related to over-choice. In recent years, deep learning has garnered considerable interest in many research fields such as computer vision and natural language processing, owing not only to stellar performance but also to the attractive property of learning feature representations from scratch. The influence of deep learning is also pervasive, recently demonstrating its effectiveness when applied to information retrieval and recommender systems research. The field of deep learning in recommender system is flourishing. This article aims to provide a comprehensive review of recent research efforts on deep learning-based recommender systems. More concretely, we provide and devise a taxonomy of deep learning-based recommendation models, along with a comprehensive summary of the state of the art. Finally, we expand on current trends and provide new perspectives pertaining to this new and exciting development of the field.},
+journal = {ACM Comput. Surv.},
+month = feb,
+articleno = {5},
+numpages = {38},
+keywords = {survey, Recommender system, deep learning}
+}
