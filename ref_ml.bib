@@ -547,3 +547,205 @@ articleno = {5},
 numpages = {38},
 keywords = {survey, Recommender system, deep learning}
 }
+
+@INPROCEEDINGS{7837964,  author={Y. {Qu} and H. {Cai} and K. {Ren} and W. {Zhang} and Y. {Yu} and Y. {Wen} and J. {Wang}},  booktitle={2016 IEEE 16th International Conference on Data Mining (ICDM)},   title={Product-Based Neural Networks for User Response Prediction},   year={2016},  volume={},  number={},  pages={1149-1154},  doi={10.1109/ICDM.2016.0151}}
+
+@article{45413,
+title = {Wide & Deep Learning for Recommender Systems},
+author  = {Heng-Tze Cheng and Levent Koc and Jeremiah Harmsen and Tal Shaked and Tushar Chandra and Hrishi Aradhye and Glen Anderson and Greg Corrado and Wei Chai and Mustafa Ispir and Rohan Anil and Zakaria Haque and Lichan Hong and Vihan Jain and Xiaobing Liu and Hemal Shah},
+year  = {2016},
+URL = {http://arxiv.org/abs/1606.07792},
+journal = {arXiv:1606.07792}
+}
+
+@inproceedings{ijcai2017-0239,
+  author    = {Huifeng Guo and Ruiming TANG and Yunming Ye and Zhenguo Li and Xiuqiang He},
+  title     = {DeepFM: A Factorization-Machine based Neural Network for CTR Prediction},
+  booktitle = {Proceedings of the Twenty-Sixth International Joint Conference on
+               Artificial Intelligence, {IJCAI-17}},
+  pages     = {1725--1731},
+  year      = {2017},
+  doi       = {10.24963/ijcai.2017/239},
+  url       = {https://doi.org/10.24963/ijcai.2017/239},
+}
+
+@inproceedings{10.1145/3219819.3220023,
+author = {Lian, Jianxun and Zhou, Xiaohuan and Zhang, Fuzheng and Chen, Zhongxia and Xie, Xing and Sun, Guangzhong},
+title = {XDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems},
+year = {2018},
+isbn = {9781450355520},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3219819.3220023},
+doi = {10.1145/3219819.3220023},
+abstract = {Combinatorial features are essential for the success of many commercial models. Manually crafting these features usually comes with high cost due to the variety, volume and velocity of raw data in web-scale systems. Factorization based models, which measure interactions in terms of vector product, can learn patterns of combinatorial features automatically and generalize to unseen features as well. With the great success of deep neural networks (DNNs) in various fields, recently researchers have proposed several DNN-based factorization model to learn both low- and high-order feature interactions. Despite the powerful ability of learning an arbitrary function from data, plain DNNs generate feature interactions implicitly and at the bit-wise level. In this paper, we propose a novel Compressed Interaction Network (CIN), which aims to generate feature interactions in an explicit fashion and at the vector-wise level. We show that the CIN share some functionalities with convolutional neural networks (CNNs) and recurrent neural networks (RNNs). We further combine a CIN and a classical DNN into one unified model, and named this new model eXtreme Deep Factorization Machine (xDeepFM). On one hand, the xDeepFM is able to learn certain bounded-degree feature interactions explicitly; on the other hand, it can learn arbitrary low- and high-order feature interactions implicitly. We conduct comprehensive experiments on three real-world datasets. Our results demonstrate that xDeepFM outperforms state-of-the-art models. We have released the source code of xDeepFM at https://github.com/Leavingseason/xDeepFM.},
+booktitle = {Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining},
+pages = {1754–1763},
+numpages = {10},
+keywords = {feature interactions, neural network, deep learning, recommender systems, factorization machines},
+location = {London, United Kingdom},
+series = {KDD '18}
+}
+
+@inproceedings{10.1145/3357384.3357925,
+author = {Song, Weiping and Shi, Chence and Xiao, Zhiping and Duan, Zhijian and Xu, Yewen and Zhang, Ming and Tang, Jian},
+title = {AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks},
+year = {2019},
+isbn = {9781450369763},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3357384.3357925},
+doi = {10.1145/3357384.3357925},
+abstract = {Click-through rate (CTR) prediction, which aims to predict the probability of a user clicking on an ad or an item, is critical to many online applications such as online advertising and recommender systems. The problem is very challenging since (1) the input features (e.g., the user id, user age, item id, item category) are usually sparse and high-dimensional, and (2) an effective prediction relies on high-order combinatorial features (a.k.a. cross features), which are very time-consuming to hand-craft by domain experts and are impossible to be enumerated. Therefore, there have been efforts in finding low-dimensional representations of the sparse and high-dimensional raw features and their meaningful combinations. In this paper, we propose an effective and efficient method called the AutoInt to automatically learn the high-order feature interactions of input features. Our proposed algorithm is very general, which can be applied to both numerical and categorical input features. Specifically, we map both the numerical and categorical features into the same low-dimensional space. Afterwards, a multi-head self-attentive neural network with residual connections is proposed to explicitly model the feature interactions in the low-dimensional space. With different layers of the multi-head self-attentive neural networks, different orders of feature combinations of input features can be modeled. The whole model can be efficiently fit on large-scale raw data in an end-to-end fashion. Experimental results on four real-world datasets show that our proposed approach not only outperforms existing state-of-the-art approaches for prediction but also offers good explainability. Code is available at: urlhttps://github.com/DeepGraphLearning/RecommenderSystems.},
+booktitle = {Proceedings of the 28th ACM International Conference on Information and Knowledge Management},
+pages = {1161–1170},
+numpages = {10},
+keywords = {ctr prediction, self attention, high-order feature interactions, explainable recommendation},
+location = {Beijing, China},
+series = {CIKM '19}
+}
+
+@InProceedings{pmlr-v70-finn17a, title = {Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks}, author = {Chelsea Finn and Pieter Abbeel and Sergey Levine}, booktitle = {Proceedings of the 34th International Conference on Machine Learning}, pages = {1126--1135}, year = {2017}, editor = {Doina Precup and Yee Whye Teh}, volume = {70}, series = {Proceedings of Machine Learning Research}, address = {International Convention Centre, Sydney, Australia}, month = {06--11 Aug}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v70/finn17a/finn17a.pdf}, url = {http://proceedings.mlr.press/v70/finn17a.html}, abstract = {We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is compatible with any model trained with gradient descent and applicable to a variety of different learning problems, including classification, regression, and reinforcement learning. The goal of meta-learning is to train a model on a variety of learning tasks, such that it can solve new learning tasks using only a small number of training samples. In our approach, the parameters of the model are explicitly trained such that a small number of gradient steps with a small amount of training data from a new task will produce good generalization performance on that task. In effect, our method trains the model to be easy to fine-tune. We demonstrate that this approach leads to state-of-the-art performance on two few-shot image classification benchmarks, produces good results on few-shot regression, and accelerates fine-tuning for policy gradient reinforcement learning with neural network policies.} }
+
+@article {Lake1332,
+    author = {Lake, Brenden M. and Salakhutdinov, Ruslan and Tenenbaum, Joshua B.},
+    title = {Human-level concept learning through probabilistic program induction},
+    volume = {350},
+    number = {6266},
+    pages = {1332--1338},
+    year = {2015},
+    doi = {10.1126/science.aab3050},
+    publisher = {American Association for the Advancement of Science},
+    abstract = {Not only do children learn effortlessly, they do so quickly and with a remarkable ability to use what they have learned as the raw material for creating new stuff. Lake et al. describe a computational model that learns in a similar fashion and does so better than current deep learning algorithms. The model classifies, parses, and recreates handwritten characters, and can generate new letters of the alphabet that look {\textquotedblleft}right{\textquotedblright} as judged by Turing-like tests of the model{\textquoteright}s output in comparison to what real humans produce.Science, this issue p. 1332People learning new concepts can often generalize successfully from just a single example, yet machine learning algorithms typically require tens or hundreds of examples to perform with similar accuracy. People can also use learned concepts in richer ways than conventional algorithms{\textemdash}for action, imagination, and explanation. We present a computational model that captures these human learning abilities for a large class of simple visual concepts: handwritten characters from the world{\textquoteright}s alphabets. The model represents concepts as simple programs that best explain observed examples under a Bayesian criterion. On a challenging one-shot classification task, the model achieves human-level performance while outperforming recent deep learning approaches. We also present several {\textquotedblleft}visual Turing tests{\textquotedblright} probing the model{\textquoteright}s creative generalization abilities, which in many cases are indistinguishable from human behavior.},
+    issn = {0036-8075},
+    URL = {https://science.sciencemag.org/content/350/6266/1332},
+    eprint = {https://science.sciencemag.org/content/350/6266/1332.full.pdf},
+    journal = {Science}
+}
+
+@inproceedings{NIPS2016_90e13578,
+ author = {Vinyals, Oriol and Blundell, Charles and Lillicrap, Timothy and kavukcuoglu, koray and Wierstra, Daan},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Matching Networks for One Shot Learning},
+ url = {https://proceedings.neurips.cc/paper/2016/file/90e1357833654983612fb05e3ec9148c-Paper.pdf},
+ volume = {29},
+ year = {2016}
+}
+
+@InProceedings{pmlr-v48-santoro16, title = {Meta-Learning with Memory-Augmented Neural Networks}, author = {Adam Santoro and Sergey Bartunov and Matthew Botvinick and Daan Wierstra and Timothy Lillicrap}, booktitle = {Proceedings of The 33rd International Conference on Machine Learning}, pages = {1842--1850}, year = {2016}, editor = {Maria Florina Balcan and Kilian Q. Weinberger}, volume = {48}, series = {Proceedings of Machine Learning Research}, address = {New York, New York, USA}, month = {20--22 Jun}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v48/santoro16.pdf}, url = {http://proceedings.mlr.press/v48/santoro16.html}, abstract = {Despite recent breakthroughs in the applications of deep neural networks, one setting that presents a persistent challenge is that of "one-shot learning." Traditional gradient-based networks require a lot of data to learn, often through extensive iterative training. When new data is encountered, the models must inefficiently relearn their parameters to adequately incorporate the new information without catastrophic interference. Architectures with augmented memory capacities, such as Neural Turing Machines (NTMs), offer the ability to quickly encode and retrieve new information, and hence can potentially obviate the downsides of conventional models. Here, we demonstrate the ability of a memory-augmented neural network to rapidly assimilate new data, and leverage this data to make accurate predictions after only a few samples. We also introduce a new method for accessing an external memory that focuses on memory content, unlike previous methods that additionally use memory location-based focusing mechanisms.} }
+
+@inproceedings{10.1145/3331184.3331268,
+author = {Pan, Feiyang and Li, Shuokai and Ao, Xiang and Tang, Pingzhong and He, Qing},
+title = {Warm Up Cold-Start Advertisements: Improving CTR Predictions via Learning to Learn ID Embeddings},
+year = {2019},
+isbn = {9781450361729},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3331184.3331268},
+doi = {10.1145/3331184.3331268},
+abstract = {Click-through rate (CTR) prediction has been one of the most central problems in computational advertising. Lately, embedding techniques that produce low-dimensional representations of ad IDs drastically improve CTR prediction accuracies. However, such learning techniques are data demanding and work poorly on new ads with little logging data, which is known as the cold-start problem.In this paper, we aim to improve CTR predictions during both the cold-start phase and the warm-up phase when a new ad is added to the candidate pool. We propose Meta-Embedding, a meta-learning-based approach that learns to generate desirable initial embeddings for new ad IDs. The proposed method trains an embedding generator for new ad IDs by making use of previously learned ads through gradient-based meta-learning. In other words, our method learns how to learn better embeddings. When a new ad comes, the trained generator initializes the embedding of its ID by feeding its contents and attributes. Next, the generated embedding can speed up the model fitting during the warm-up phase when a few labeled examples are available, compared to the existing initialization methods.Experimental results on three real-world datasets showed that Meta-Embedding can significantly improve both the cold-start and warm-up performances for six existing CTR prediction models, ranging from lightweight models such as Factorization Machines to complicated deep models such as PNN and DeepFM. All of the above apply to conversion rate (CVR) predictions as well.},
+booktitle = {Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {695–704},
+numpages = {10},
+keywords = {online advertising, meta-learning, ctr prediction, cold-start},
+location = {Paris, France},
+series = {SIGIR'19}
+}
+
+@misc{nakkiran2021deep,
+      title={The Deep Bootstrap Framework: Good Online Learners are Good Offline Generalizers}, 
+      author={Preetum Nakkiran and Behnam Neyshabur and Hanie Sedghi},
+      year={2021},
+      eprint={2010.08127},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{Dacrema2019,
+author = {Dacrema, Maurizio Ferrari and Cremonesi, Paolo and Jannach, Dietmar},
+title = {Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches},
+year = {2019},
+isbn = {9781450362436},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3298689.3347058},
+doi = {10.1145/3298689.3347058},
+abstract = {Deep learning techniques have become the method of choice for researchers working on algorithmic aspects of recommender systems. With the strongly increased interest in machine learning in general, it has, as a result, become difficult to keep track of what represents the state-of-the-art at the moment, e.g., for top-n recommendation tasks. At the same time, several recent publications point out problems in today's research practice in applied machine learning, e.g., in terms of the reproducibility of the results or the choice of the baselines when proposing new models.In this work, we report the results of a systematic analysis of algorithmic proposals for top-n recommendation tasks. Specifically, we considered 18 algorithms that were presented at top-level research conferences in the last years. Only 7 of them could be reproduced with reasonable effort. For these methods, it however turned out that 6 of them can often be outperformed with comparably simple heuristic methods, e.g., based on nearest-neighbor or graph-based techniques. The remaining one clearly outperformed the baselines but did not consistently outperform a well-tuned non-neural linear ranking method. Overall, our work sheds light on a number of potential problems in today's machine learning scholarship and calls for improved scientific practices in this area.},
+booktitle = {Proceedings of the 13th ACM Conference on Recommender Systems},
+pages = {101–109},
+numpages = {9},
+keywords = {deep learning, evaluation, reproducibility, recommender systems},
+location = {Copenhagen, Denmark},
+series = {RecSys '19}
+}
+
+@book{Goodfellow-et-al-2016,
+    title={Deep Learning},
+    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+    publisher={MIT Press},
+    note={\url{http://www.deeplearningbook.org}},
+    year={2016}
+}
+
+@book{Ng2018,
+    title={Machine Learning Yearning},
+    author={Andrew Ng},
+    publisher={Andrew Ng},
+    note={\url{https://github.com/ajaymache/machine-learning-yearning}},
+    year={2018}
+}
+
+@book{Burkov2020,
+    title={Machine Learning Engineering},
+    author={Andriy Burkov},
+    publisher={Andriy Burkov},
+    note={\url{http://www.mlebook.com/wiki/doku.php}},
+    year={2020}
+}
+
+@book{Valiant2013,
+    title={Probably Approximately Correct},
+    author={Valiant, Leslie},
+    publisher={Basic Books},
+    year={2013}
+}
+
+@book{Burkov2019,
+    title={The Hundred-Page Machine Learning Book},
+    author={Andriy Burkov},
+    publisher={Andriy Burkov},
+    note={\url{http://themlbook.com/}},
+    year={2019}
+}
+
+@book{Zhang2021,
+    title={Dive into Deep Learning},
+    author={Aston Zhang and Zachary C.~Lipton and Mu Li and and Alexander J.~Smola},
+    note={\url{https://d2l.ai/}},
+    year={2021}
+}
+
+@book{Lapan2018,
+    title={Deep Reinforcement Learning Hands-On},
+    author={Maxim Lapan},
+    publisher={Packt},
+    note={\url{https://www.packtpub.com/product/deep-reinforcement-learning-hands-on/9781788834247}},
+    year={2018}
+}
+
+@book{Sutton2018,
+    title={Reinforcement Learning: An Introduction},
+    author={Richard S.~Sutton and Andrew G.~Barto},
+    publisher={Bradford Books},
+    year={2018}
+}
+
+@book{Pearl2018,
+    title={The Book of Why: The New Science of Cause and Effect},
+    author={Judea Pearl and Dana Mackenzie},
+    publisher={Basic Books},
+    year={2018}
+}
